@@ -52,6 +52,8 @@ The backend provides a RESTful API built with Express and Mongoose, supporting f
 
 :link:&nbsp; https://hunting-buddy.onrender.com
 
+backend deploy link: https://hunting-buddy-api-bd8e77e8a490.herokuapp.com/
+
 ## <a name="installation"></a> 3. Installation
 
 ### Package Manager: npm (v10.8.1)

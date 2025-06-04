@@ -2,6 +2,7 @@ import 'express-async-errors';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
+import cors from 'cors';
 import express from 'express';
 const app = express();
 
@@ -33,6 +34,13 @@ cloudinary.config({
 });
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+
+app.use(
+  cors({
+    origin: '*',
+    credentials: true,
+  })
+);
 
 app.use((req, res, next) => {
   // handle cors issues
