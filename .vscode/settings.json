@@ -1,0 +1,26 @@
+{
+  "cSpell.language": "en,en-GB,en-US,lorem",
+  "editor.wordSegmenterLocales": null,
+  "workbench.preferredHighContrastColorTheme": "Default High Contrast",
+  "workbench.colorCustomizations": {
+    "terminal.ansiBlack": "#000000",
+    "terminal.ansiBlue": "#002b88",
+    "terminal.ansiBrightBlack": "#686868",
+    "terminal.ansiBrightBlue": "#b2d6fb",
+    "terminal.ansiBrightCyan": "#2db8e2",
+    "terminal.ansiBrightGreen": "#15b068",
+    "terminal.ansiBrightMagenta": "#ffd1dc",
+    "terminal.ansiBrightRed": "#ad7eca",
+    "terminal.ansiBrightWhite": "#ffffff",
+    "terminal.ansiBrightYellow": "#fffbcc",
+    "terminal.ansiCyan": "#0874b8e0",
+    "terminal.ansiGreen": "#12ad81",
+    "terminal.ansiMagenta": "#8e148e",
+    "terminal.ansiRed": "#c33939",
+    "terminal.ansiWhite": "#ededed",
+    "terminal.ansiYellow": "#e1cb81d8",
+    "terminal.foreground": "#eeeff5b7",
+    "terminal.selectionBackground": "#709f6bc8"
+  },
+  "postman.settings.dotenv-detection-notification-visibility": false
+}
