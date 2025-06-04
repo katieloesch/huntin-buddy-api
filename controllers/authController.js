@@ -47,7 +47,7 @@ export const login = async (req, res) => {
   res.cookie('token', token, {
     httpOnly: true, // can't be accessed using JS, makes it more secure
     expires: new Date(Date.now() + oneDayMs), // jwt expires in 1 day, set cookie expiration to same value but in ms
-    secure: true, // true if while in production env (https), false while in dev env (http)
+    secure: process.env.NODE_ENV === 'production',
     sameSite: 'None',
   });
 
