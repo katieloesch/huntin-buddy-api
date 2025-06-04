@@ -42,12 +42,13 @@ export const login = async (req, res) => {
 
   //one day in milliseconds
   const oneDayMs = 1000 * 60 * 60 * 24;
+  const isLocalhost = req.headers.origin?.includes('localhost');
 
   // send back cookie, name of cookie: 'token',
   res.cookie('token', token, {
     httpOnly: true, // can't be accessed using JS, makes it more secure
     expires: new Date(Date.now() + oneDayMs), // jwt expires in 1 day, set cookie expiration to same value but in ms
-    secure: process.env.NODE_ENV === 'production',
+    secure: !isLocalhost,
     sameSite: 'None',
   });
 
