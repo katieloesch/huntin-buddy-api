@@ -79,6 +79,14 @@ app.use('/api/v1/auth', authRouter);
 // app.get('*', (req, res) => {
 //   res.sendFile(path.resolve(__dirname, './client/dist', 'index.html'));
 // });
+app.get('/api/v1/test-cookie', (req, res) => {
+  res.cookie('testCookie', 'value', {
+    httpOnly: true,
+    secure: false,
+    sameSite: 'None',
+  });
+  res.json({ msg: 'cookie sent' });
+});
 
 app.use('*', (req, res) => {
   res.status(404).json({ msg: 'not found' });
