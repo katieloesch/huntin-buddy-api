@@ -2,9 +2,9 @@ import 'express-async-errors';
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-import cors from 'cors';
 import express from 'express';
 const app = express();
+import cors from 'cors';
 
 import morgan from 'morgan';
 import mongoose from 'mongoose';
@@ -37,7 +37,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 app.use(
   cors({
-    origin: '*',
+    origin: [
+      'http://localhost:5173',
+      'https://hunting-buddy.katieloesch.co.uk',
+    ],
     credentials: true,
   })
 );
